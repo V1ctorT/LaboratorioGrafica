@@ -225,7 +225,8 @@ int main() {
 		glm::mat4 view=glm::mat4(1);
 	
 	    view = glm::translate(view, glm::vec3(0.0f,0.0f,-25.0f));
-		model = glm::rotate( model, 10.0f, glm::vec3(-1.0f, 0.0f, 0.0f)); // use to compare orthographic and perspective projection
+		model = glm::translate(model, glm::vec3(5.0f, 0.0f, 10.0f));
+		model = glm::rotate( model, 30.0f, glm::vec3(-1.0f, 0.0f, 0.0f)); // use to compare orthographic and perspective projection
 		//model = glm::scale(model, glm::vec3(500.0f, 500.0f, 500.0f));
 		//view = glm::translate( view, glm::vec3( screenWidth / 2, screenHeight / 2,-40.0f ) ); // use with orthographic projection
 		
