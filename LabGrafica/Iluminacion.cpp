@@ -254,7 +254,6 @@ int main()
 
         glBindVertexArray(0);
 
-
         lampshader.Use();
         glUniformMatrix4fv(glGetUniformLocation(lampshader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
         glUniformMatrix4fv(glGetUniformLocation(lampshader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
@@ -381,5 +380,3 @@ void MouseCallback(GLFWwindow* window, double xPos, double yPos)
 
     camera.ProcessMouseMovement(xOffset, yOffset);
 }
-
-
