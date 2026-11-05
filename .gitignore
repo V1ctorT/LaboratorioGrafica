@@ -12,6 +12,8 @@
 
 # Librerias externas
 ExternalLibraries/
+External Libraries/
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
